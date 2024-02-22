@@ -4,7 +4,9 @@ dotenv.config();
 import message from "./message.js";
 import query from "./query.js";
 
-export const bot = new TELEGRAM_BOT(process.env.TOKEN, {
+const TOKEN = "6919683296:AAGrC62vpFh92dp90D6K3PPT-KnnUzc5ZpU";
+
+export const bot = new TELEGRAM_BOT(TOKEN, {
   polling: true,
   pollingTimeOut: 60,
 });
